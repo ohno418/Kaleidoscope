@@ -40,65 +40,69 @@
 
 enum {
   MACRO_QWERTY,
-  MACRO_VERSION_INFO
+  MACRO_VERSION_INFO,
+  // Switch IME (ctrl+space).
+  MACRO_IME,
 };
 
-#define Key_Exclamation LSHIFT(Key_1)
-#define Key_At          LSHIFT(Key_2)
-#define Key_Hash        LSHIFT(Key_3)
-#define Key_Dollar      LSHIFT(Key_4)
-#define Key_Percent     LSHIFT(Key_5)
-#define Key_Caret       LSHIFT(Key_6)
-#define Key_And         LSHIFT(Key_7)
-#define Key_Star        LSHIFT(Key_8)
 #define Key_Plus        LSHIFT(Key_Equals)
+#define Key_Underscore  LSHIFT(Key_Minus)
+#define Key_DoubleQuote LSHIFT(Key_Quote)
+#define Key_LeftCurly   LSHIFT(Key_LeftBracket)
+#define Key_RightCurly  LSHIFT(Key_RightBracket)
+
+#define Key_Mute        Consumer_Mute
+#define Key_VolDown     Consumer_VolumeDecrement
+#define Key_VolUp       Consumer_VolumeIncrement
+#define Key_LightDown   Consumer_DisplayBrightnessDecrement
+#define Key_LightUp     Consumer_DisplayBrightnessIncrement
 
 enum {
   QWERTY,
-  FUN,
-  UPPER
+  SYMS,
+  MISC,
 };
 
 // clang-format off
 KEYMAPS(
   [QWERTY] = KEYMAP_STACKED
   (
-       Key_Q   ,Key_W   ,Key_E       ,Key_R         ,Key_T
-      ,Key_A   ,Key_S   ,Key_D       ,Key_F         ,Key_G
-      ,Key_Z   ,Key_X   ,Key_C       ,Key_V         ,Key_B, Key_Backtick
-      ,Key_Esc ,Key_Tab ,Key_LeftGui ,Key_LeftShift ,Key_Backspace ,Key_LeftControl
+     Key_Q           ,Key_W           ,Key_E           ,Key_R            ,Key_T
+    ,Key_A           ,Key_S           ,Key_D           ,Key_F            ,Key_G
+    ,Key_Z           ,Key_X           ,Key_C           ,Key_V            ,Key_B           ,Key_Esc
+    ,Key_LeftShift   ,MO(MISC)        ,Key_LeftAlt     ,Key_LeftShift    ,Key_Space       ,Key_LeftControl
 
-                     ,Key_Y     ,Key_U      ,Key_I     ,Key_O      ,Key_P
-                     ,Key_H     ,Key_J      ,Key_K     ,Key_L      ,Key_Semicolon
-       ,Key_Backslash,Key_N     ,Key_M      ,Key_Comma ,Key_Period ,Key_Slash
-       ,Key_LeftAlt  ,Key_Space ,MO(FUN)    ,Key_Minus ,Key_Quote  ,Key_Enter
+                     ,Key_Y           ,Key_U           ,Key_I            ,Key_O           ,Key_P
+                     ,Key_H           ,Key_J           ,Key_K            ,Key_L           ,Key_Semicolon
+    ,Key_Backspace   ,Key_N           ,Key_M           ,Key_Comma        ,Key_Period      ,Key_Slash
+    ,Key_Tab         ,Key_Enter       ,MO(SYMS)        ,M(MACRO_IME)     ,Key_Minus       ,Key_Quote
   ),
 
-  [FUN] = KEYMAP_STACKED
+  [SYMS] = KEYMAP_STACKED
   (
-       Key_Exclamation ,Key_At           ,Key_UpArrow   ,Key_Dollar           ,Key_Percent
-      ,Key_LeftParen   ,Key_LeftArrow    ,Key_DownArrow ,Key_RightArrow       ,Key_RightParen
-      ,Key_LeftBracket ,Key_RightBracket ,Key_Hash      ,Key_LeftCurlyBracket ,Key_RightCurlyBracket ,Key_Caret
-      ,TG(UPPER)       ,Key_Insert       ,Key_LeftGui   ,Key_LeftShift        ,Key_Delete         ,Key_LeftControl
+     Key_1           ,Key_2           ,Key_3           ,Key_4            ,Key_5
+    ,Key_Backtick    ,Key_Backslash   ,Key_Equals      ,Key_Minus        ,Key_Quote
+    ,___             ,___             ,Key_Plus        ,Key_Underscore   ,Key_DoubleQuote ,Key_Esc
+    ,Key_LeftShift   ,___             ,Key_LeftAlt     ,Key_LeftShift    ,Key_Space       ,Key_LeftControl
 
-                   ,Key_PageUp   ,Key_7 ,Key_8      ,Key_9 ,Key_Backspace
-                   ,Key_PageDown ,Key_4 ,Key_5      ,Key_6 ,___
-      ,Key_And     ,Key_Star     ,Key_1 ,Key_2      ,Key_3 ,Key_Plus
-      ,Key_LeftAlt ,Key_Space    ,___   ,Key_Period ,Key_0 ,Key_Equals
-   ),
+                     ,Key_6           ,Key_7           ,Key_8            ,Key_9           ,Key_0
+                     ,___             ,Key_LeftParen   ,Key_RightParen   ,Key_LeftCurly   ,Key_RightCurly
+    ,Key_Backspace   ,___             ,Key_LeftBracket ,Key_RightBracket ,___             ,___
+    ,Key_Tab         ,Key_Enter       ,___             ,___              ,___             ,___
+  ),
 
-  [UPPER] = KEYMAP_STACKED
+  [MISC] = KEYMAP_STACKED
   (
-       Key_Insert            ,Key_Home                 ,Key_UpArrow   ,Key_End        ,Key_PageUp
-      ,Key_Delete            ,Key_LeftArrow            ,Key_DownArrow ,Key_RightArrow ,Key_PageDown
-      ,M(MACRO_VERSION_INFO) ,Consumer_VolumeIncrement ,XXX           ,XXX            ,___ ,___
-      ,MoveToLayer(QWERTY)   ,Consumer_VolumeDecrement ,___           ,___            ,___ ,___
+     ___             ,___             ,___             ,___              ,___
+    ,___             ,___             ,___             ,___              ,___
+    ,___             ,___             ,___             ,___              ,___             ,___
+    ,___             ,___             ,___             ,___              ,___             ,___
 
-                ,Key_UpArrow   ,Key_F7              ,Key_F8          ,Key_F9         ,Key_F10
-                ,Key_DownArrow ,Key_F4              ,Key_F5          ,Key_F6         ,Key_F11
-      ,___      ,XXX           ,Key_F1              ,Key_F2          ,Key_F3         ,Key_F12
-      ,___      ,___           ,MoveToLayer(QWERTY) ,Key_PrintScreen ,Key_ScrollLock ,Consumer_PlaySlashPause
-   )
+                     ,Key_Mute        ,Key_VolDown     ,Key_VolUp        ,Key_LightDown   ,Key_LightUp
+                     ,Key_LeftArrow   ,Key_DownArrow   ,Key_UpArrow      ,Key_RightArrow  ,___
+    ,Key_PrintScreen ,___             ,___             ,___              ,___             ,___
+    ,___             ,___             ,___             ,___              ,___             ,___
+  ),
 )
 // clang-format on
 
@@ -187,6 +191,8 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
       Macros.type(PSTR("Keyboardio Atreus - Kaleidoscope "));
       Macros.type(PSTR(BUILD_INFORMATION));
       break;
+    case MACRO_IME:
+      return MACRO(D(LeftControl), D(Space), U(Space));
     default:
       break;
     }
