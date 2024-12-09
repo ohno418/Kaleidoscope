@@ -193,7 +193,7 @@ void setup() {
   )
   Qukeys.setHoldTimeout(1000);
   Qukeys.setOverlapThreshold(50);
-  Qukeys.setMinimumHoldTime(100);
+  Qukeys.setMinimumHoldTime(200);
   Qukeys.setMinimumPriorInterval(80);
   Qukeys.setMaxIntervalForTapRepeat(150);
 
