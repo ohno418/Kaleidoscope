@@ -186,9 +186,10 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
 }
 
 void setup() {
-  // qkeys
+  // Qukeys
   QUKEYS(
-    kaleidoscope::plugin::Qukey(QWERTY, KeyAddr(2, 0), Key_LeftShift), // Z/Shift
+    // Z/Shift
+    kaleidoscope::plugin::Qukey(QWERTY, KeyAddr(2, 0), Key_LeftShift),
   )
   Qukeys.setHoldTimeout(1000);
   Qukeys.setOverlapThreshold(50);
