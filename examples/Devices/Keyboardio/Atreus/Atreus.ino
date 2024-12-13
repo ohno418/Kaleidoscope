@@ -65,28 +65,28 @@ enum {
 KEYMAPS(
   [QWERTY] = KEYMAP_STACKED
   (
-       Key_Q         ,Key_W        ,Key_E         ,Key_R       ,Key_T
-      ,Key_A         ,Key_S        ,Key_D         ,Key_F       ,Key_G
-      ,Key_Z         ,Key_X        ,Key_C         ,Key_V       ,Key_B      ,Key_Esc
-      ,Key_LeftShift ,___          ,___           ,Key_LeftAlt ,Key_Space  ,Key_LeftControl
+       Key_Q         ,Key_W         ,Key_E          ,Key_R         ,Key_T
+      ,Key_A         ,Key_S         ,Key_D          ,Key_F         ,Key_G
+      ,Key_Z         ,Key_X         ,Key_C          ,Key_V         ,Key_B       ,Key_Esc
+      ,Key_LeftShift ,Key_LeftArrow ,Key_RightArrow ,Key_LeftAlt   ,Key_Space   ,Key_LeftControl
 
-                     ,Key_Y        ,Key_U         ,Key_I       ,Key_O      ,Key_P
-                     ,Key_H        ,Key_J         ,Key_K       ,Key_L      ,Key_Semicolon
-      ,Key_Backspace ,Key_N        ,Key_M         ,Key_Comma   ,Key_Period ,Key_Slash
-      ,Key_Tab       ,Key_Enter    ,MO(FUN)       ,___         ,___        ,M(MACRO_SWITCH_IME)
+                     ,Key_Y         ,Key_U          ,Key_I         ,Key_O       ,Key_P
+                     ,Key_H         ,Key_J          ,Key_K         ,Key_L       ,Key_Semicolon
+      ,Key_Backspace ,Key_N         ,Key_M          ,Key_Comma     ,Key_Period  ,Key_Slash
+      ,Key_Tab       ,Key_Enter     ,MO(FUN)        ,Key_DownArrow ,Key_UpArrow ,M(MACRO_SWITCH_IME)
   ),
 
   [FUN] = KEYMAP_STACKED
   (
-       Key_1           ,Key_2         ,Key_3              ,Key_4             ,Key_5
-      ,LSHIFT(Key_4)   ,LSHIFT(Key_8) ,Key_Equals         ,Key_Minus         ,Key_Quote
-      ,Key_LeftShift   ,LSHIFT(Key_5) ,LSHIFT(Key_Equals) ,LSHIFT(Key_Minus) ,LSHIFT(Key_Quote)                    ,Key_LeftArrow
+       Key_1           ,Key_2             ,Key_3              ,Key_4             ,Key_5
+      ,LSHIFT(Key_2)   ,Key_Quote         ,Key_Equals         ,Key_Minus         ,LSHIFT(Key_3)
+      ,LSHIFT(Key_1)   ,LSHIFT(Key_Quote) ,LSHIFT(Key_Equals) ,LSHIFT(Key_Minus) ,LSHIFT(Key_4)                    ,LSHIFT(Key_5)
       ,Key_LeftShift   ,Consumer_DisplayBrightnessDecrement ,Consumer_DisplayBrightnessIncrement ,Key_LeftAlt ,___ ,Key_LeftControl
 
-                       ,Key_6         ,Key_7              ,Key_8             ,Key_9 ,Key_0
-                       ,Key_UpArrow   ,Key_LeftParen      ,Key_RightParen    ,LSHIFT(Key_LeftBracket)  ,LSHIFT(Key_RightBracket)
-      ,Key_RightArrow  ,Key_DownArrow ,Key_LeftBracket    ,Key_RightBracket  ,Key_Backtick             ,Key_Backslash
-      ,Key_PrintScreen ,___           ,___                ,Consumer_Mute     ,Consumer_VolumeDecrement ,Consumer_VolumeIncrement
+                       ,Key_6             ,Key_7              ,Key_8             ,Key_9 ,Key_0
+                       ,LSHIFT(Key_8)     ,Key_LeftParen      ,Key_RightParen    ,LSHIFT(Key_LeftBracket)          ,LSHIFT(Key_RightBracket)
+      ,LSHIFT(Key_6)   ,LSHIFT(Key_7)     ,Key_LeftBracket    ,Key_RightBracket  ,Key_Backtick                     ,Key_Backslash
+      ,Key_PrintScreen ,___               ,___                ,Consumer_Mute     ,Consumer_VolumeDecrement         ,Consumer_VolumeIncrement
    )
 )
 // clang-format on
