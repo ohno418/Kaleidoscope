@@ -57,8 +57,7 @@ enum {
 
 enum {
   QWERTY,
-  FUN,
-  UPPER
+  SYMS,
 };
 
 // clang-format off
@@ -73,10 +72,10 @@ KEYMAPS(
                      ,Key_Y         ,Key_U          ,Key_I         ,Key_O       ,Key_P
                      ,Key_H         ,Key_J          ,Key_K         ,Key_L       ,Key_Semicolon
       ,Key_Backspace ,Key_N         ,Key_M          ,Key_Comma     ,Key_Period  ,Key_Slash
-      ,Key_Tab       ,Key_Enter     ,MO(FUN)        ,Key_DownArrow ,Key_UpArrow ,M(MACRO_SWITCH_IME)
+      ,Key_Tab       ,Key_Enter     ,MO(SYMS)       ,Key_DownArrow ,Key_UpArrow ,M(MACRO_SWITCH_IME)
   ),
 
-  [FUN] = KEYMAP_STACKED
+  [SYMS] = KEYMAP_STACKED
   (
        Key_1           ,Key_2             ,Key_3              ,Key_4             ,Key_5
       ,LSHIFT(Key_2)   ,Key_Quote         ,Key_Equals         ,Key_Minus         ,LSHIFT(Key_3)
