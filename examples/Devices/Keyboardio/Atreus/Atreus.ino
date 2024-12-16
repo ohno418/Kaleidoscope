@@ -192,7 +192,7 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
       Macros.type(PSTR(BUILD_INFORMATION));
       break;
     case MACRO_SWITCH_IME:
-      return MACRO(D(LeftControl), D(Space), U(LeftControl), U(Space));
+      return MACRO(D(LeftControl), D(Space), U(Space));
     default:
       break;
     }
