@@ -83,7 +83,7 @@ KEYMAPS(
       ,LSHIFT(Key_1) ,LSHIFT(Key_Quote) ,LSHIFT(Key_Equals) ,LSHIFT(Key_Minus) ,LSHIFT(Key_4)           ,LSHIFT(Key_5)
       ,Key_LeftShift ,___               ,___                ,Key_LeftAlt       ,___                     ,Key_LeftControl
 
-                     ,Key_6             ,Key_7              ,Key_8             ,Key_9 ,Key_0
+                     ,Key_6             ,Key_7              ,Key_8             ,Key_9                   ,Key_0
                      ,LSHIFT(Key_8)     ,Key_LeftParen      ,Key_RightParen    ,LSHIFT(Key_LeftBracket) ,LSHIFT(Key_RightBracket)
       ,LSHIFT(Key_6) ,LSHIFT(Key_7)     ,Key_LeftBracket    ,Key_RightBracket  ,Key_Backtick            ,Key_Backslash
       ,___           ,___               ,___                ,___               ,___                     ,___
