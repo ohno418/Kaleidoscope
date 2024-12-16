@@ -79,8 +79,8 @@ KEYMAPS(
   [SYMS] = KEYMAP_STACKED
   (
        Key_1         ,Key_2             ,Key_3              ,Key_4             ,Key_5
-      ,LSHIFT(Key_2) ,Key_Quote         ,Key_Equals         ,Key_Minus         ,LSHIFT(Key_3)
-      ,LSHIFT(Key_1) ,LSHIFT(Key_Quote) ,LSHIFT(Key_Equals) ,LSHIFT(Key_Minus) ,LSHIFT(Key_4)           ,LSHIFT(Key_5)
+      ,LSHIFT(Key_1) ,Key_Quote         ,Key_Equals         ,Key_Minus         ,LSHIFT(Key_3)
+      ,Key_LeftShift ,LSHIFT(Key_Quote) ,LSHIFT(Key_Equals) ,LSHIFT(Key_Minus) ,LSHIFT(Key_4)           ,LSHIFT(Key_5)
       ,Key_LeftShift ,___               ,___                ,Key_LeftAlt       ,___                     ,Key_LeftControl
 
                      ,Key_6             ,Key_7              ,Key_8             ,Key_9                   ,Key_0
