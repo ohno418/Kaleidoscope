@@ -65,15 +65,15 @@ enum {
 KEYMAPS(
   [QWERTY] = KEYMAP_STACKED
   (
-       Key_Q         ,Key_W     ,Key_E    ,Key_R               ,Key_T
-      ,Key_A         ,Key_S     ,Key_D    ,Key_F               ,Key_G
-      ,Key_Z         ,Key_X     ,Key_C    ,Key_V               ,Key_B      ,Key_Esc
-      ,Key_LeftShift ,MO(MISC)  ,___      ,Key_LeftAlt         ,Key_Space  ,Key_LeftControl
+       Key_Q         ,Key_W     ,Key_E       ,Key_R               ,Key_T
+      ,Key_A         ,Key_S     ,Key_D       ,Key_F               ,Key_G
+      ,Key_Z         ,Key_X     ,Key_C       ,Key_V               ,Key_B      ,Key_Esc
+      ,Key_LeftShift ,MO(MISC)  ,Key_LeftGui ,Key_LeftAlt         ,Key_Space  ,Key_LeftControl
 
-                     ,Key_Y     ,Key_U    ,Key_I               ,Key_O      ,Key_P
-                     ,Key_H     ,Key_J    ,Key_K               ,Key_L      ,Key_Semicolon
-      ,Key_Backspace ,Key_N     ,Key_M    ,Key_Comma           ,Key_Period ,Key_Slash
-      ,Key_Tab       ,Key_Enter ,MO(SYMS) ,M(MACRO_SWITCH_IME) ,MO(MISC)   ,___
+                     ,Key_Y     ,Key_U       ,Key_I               ,Key_O      ,Key_P
+                     ,Key_H     ,Key_J       ,Key_K               ,Key_L      ,Key_Semicolon
+      ,Key_Backspace ,Key_N     ,Key_M       ,Key_Comma           ,Key_Period ,Key_Slash
+      ,Key_Tab       ,Key_Enter ,MO(SYMS)    ,M(MACRO_SWITCH_IME) ,MO(MISC)   ,Key_RightControl
   ),
 
   [SYMS] = KEYMAP_STACKED
@@ -92,8 +92,8 @@ KEYMAPS(
   [MISC] = KEYMAP_STACKED
   (
       // arrows and media keys
-       ___           ,___           ,Key_UpArrow   ,___            ,___
-      ,___           ,Key_LeftArrow ,Key_DownArrow ,Key_RightArrow ,___
+       Key_Home      ,___           ,Key_UpArrow   ,___            ,Key_PageUp
+      ,Key_End       ,Key_LeftArrow ,Key_DownArrow ,Key_RightArrow ,Key_PageDown
       ,Consumer_Mute ,Consumer_VolumeDecrement ,Consumer_VolumeIncrement ,Consumer_DisplayBrightnessDecrement ,Consumer_DisplayBrightnessIncrement, Key_PrintScreen
       ,___           ,___           ,___           ,Key_LeftAlt    ,___ ,Key_LeftControl
 
