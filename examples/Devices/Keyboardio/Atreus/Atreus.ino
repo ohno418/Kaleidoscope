@@ -206,11 +206,8 @@ void setup() {
     // Z/Shift
     kaleidoscope::plugin::Qukey(QWERTY, KeyAddr(2, 0), Key_LeftShift),
   )
-  Qukeys.setHoldTimeout(1000);
-  Qukeys.setOverlapThreshold(50);
-  Qukeys.setMinimumHoldTime(200);
-  Qukeys.setMinimumPriorInterval(80);
-  Qukeys.setMaxIntervalForTapRepeat(150);
+  Qukeys.setHoldTimeout(300);
+  Qukeys.setOverlapThreshold(60);
 
   Kaleidoscope.setup();
   EEPROMKeymap.setup(9);
