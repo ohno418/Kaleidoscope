@@ -100,7 +100,7 @@ KEYMAPS(
                        ,___           ,Key_PageDown             ,Key_PageUp               ,___                                 ,___
                        ,Key_LeftArrow ,Key_DownArrow            ,Key_UpArrow              ,Key_RightArrow                      ,___
       ,Key_PrintScreen ,Consumer_Mute ,Consumer_VolumeDecrement ,Consumer_VolumeIncrement ,Consumer_DisplayBrightnessDecrement ,Consumer_DisplayBrightnessIncrement
-      ,Key_Tab         ,Key_Enter     ,___                      ,___                      ,___                                 ,Key_LeftControl
+      ,Key_Tab         ,Key_Enter     ,___                      ,___                      ,___                                 ,___
    ),
 )
 // clang-format on
