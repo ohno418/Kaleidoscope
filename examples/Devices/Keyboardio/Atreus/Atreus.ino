@@ -58,6 +58,7 @@ enum {
 enum {
   QWERTY,
   SYMS,
+  WINDOW,
   MISC,
 };
 
@@ -68,7 +69,7 @@ KEYMAPS(
        Key_Q         ,Key_W             ,Key_E              ,Key_R               ,Key_T
       ,Key_A         ,Key_S             ,Key_D              ,Key_F               ,Key_G
       ,Key_Z         ,Key_X             ,Key_C              ,Key_V               ,Key_B                   ,Key_Esc
-      ,MO(MISC)      ,Key_LeftGui       ,Key_LeftAlt        ,Key_LeftShift       ,Key_Space               ,Key_LeftControl
+      ,MO(MISC)      ,MO(WINDOW)        ,Key_LeftAlt        ,Key_LeftShift       ,Key_Space               ,Key_LeftControl
 
                      ,Key_Y             ,Key_U              ,Key_I               ,Key_O                   ,Key_P
                      ,Key_H             ,Key_J              ,Key_K               ,Key_L                   ,Key_Semicolon
@@ -87,6 +88,19 @@ KEYMAPS(
                      ,LSHIFT(Key_8)     ,Key_LeftParen      ,Key_RightParen      ,LSHIFT(Key_LeftBracket) ,LSHIFT(Key_RightBracket)
       ,LSHIFT(Key_6) ,LSHIFT(Key_7)     ,Key_LeftBracket    ,Key_RightBracket    ,Key_Backtick            ,Key_Backslash
       ,___           ,___               ,___                ,___                 ,___                     ,___
+   ),
+
+  [WINDOW] = KEYMAP_STACKED
+  (
+       LALT(Key_1)         ,LALT(Key_2)         ,LALT(Key_3)         ,LALT(Key_4)         ,LALT(Key_5)
+      ,LALT(LSHIFT(Key_1)) ,LALT(LSHIFT(Key_2)) ,LALT(LSHIFT(Key_3)) ,LALT(LSHIFT(Key_4)) ,LALT(LSHIFT(Key_5))
+      ,LALT(LCTRL(Key_1))  ,LALT(LCTRL(Key_2))  ,LALT(LCTRL(Key_3))  ,LALT(LCTRL(Key_4))  ,LALT(LCTRL(Key_5))  ,___
+      ,___                 ,___                 ,___                 ,___                 ,___                 ,___
+
+                           ,LALT(Key_6)         ,LALT(Key_7)         ,LALT(Key_8)         ,LALT(Key_9)         ,LALT(Key_0)
+                           ,LALT(LSHIFT(Key_6)) ,LALT(LSHIFT(Key_7)) ,LALT(LSHIFT(Key_8)) ,LALT(LSHIFT(Key_9)) ,LALT(LSHIFT(Key_0))
+      ,___                 ,LALT(LCTRL(Key_6))  ,LALT(LCTRL(Key_7))  ,LALT(LCTRL(Key_8))  ,LALT(LCTRL(Key_9))  ,LALT(LCTRL(Key_0))
+      ,LALT(Key_Tab)       ,___                 ,___                 ,___                 ,___                 ,___
    ),
 
   [MISC] = KEYMAP_STACKED
