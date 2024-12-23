@@ -91,10 +91,10 @@ KEYMAPS(
 
   [MISC] = KEYMAP_STACKED
   (
-       ___           ,___ ,___ ,___         ,___
-      ,___           ,___ ,___ ,___         ,___
-      ,Key_LeftShift ,___ ,___ ,___         ,___ ,___
-      ,Key_LeftShift ,___ ,___ ,Key_LeftAlt ,___ ,Key_LeftControl
+       ___ ,___ ,___         ,___           ,___
+      ,___ ,___ ,___         ,___           ,___
+      ,___ ,___ ,___         ,___           ,___ ,___
+      ,___ ,___ ,Key_LeftAlt ,Key_LeftShift ,___ ,Key_LeftControl
 
       // arrows and media keys
                        ,___           ,Key_PageDown             ,Key_PageUp               ,___                                 ,___
