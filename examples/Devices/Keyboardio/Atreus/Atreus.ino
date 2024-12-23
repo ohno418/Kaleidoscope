@@ -206,7 +206,7 @@ void setup() {
     kaleidoscope::plugin::Qukey(QWERTY, KeyAddr(2, 0), Key_LeftShift),
   )
   Qukeys.setHoldTimeout(300);
-  Qukeys.setOverlapThreshold(60);
+  Qukeys.setOverlapThreshold(30);
 
   Kaleidoscope.setup();
   EEPROMKeymap.setup(9);
