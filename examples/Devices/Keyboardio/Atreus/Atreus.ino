@@ -69,7 +69,7 @@ KEYMAPS(
        Key_Q         ,Key_W             ,Key_E              ,Key_R               ,Key_T
       ,Key_A         ,Key_S             ,Key_D              ,Key_F               ,Key_G
       ,Key_Z         ,Key_X             ,Key_C              ,Key_V               ,Key_B                   ,Key_Esc
-      ,MO(MISC)      ,Key_LeftGui       ,Key_LeftAlt        ,Key_LeftShift       ,Key_Space               ,Key_LeftControl
+      ,MO(MISC)      ,MO(WINDOW)        ,Key_LeftAlt        ,Key_LeftShift       ,Key_Space               ,Key_LeftControl
 
                      ,Key_Y             ,Key_U              ,Key_I               ,Key_O                   ,Key_P
                      ,Key_H             ,Key_J              ,Key_K               ,Key_L                   ,Key_Semicolon
@@ -82,7 +82,7 @@ KEYMAPS(
        Key_1         ,Key_2             ,Key_3              ,Key_4               ,Key_5
       ,LSHIFT(Key_2) ,Key_Quote         ,Key_Equals         ,Key_Minus           ,LSHIFT(Key_3)
       ,LSHIFT(Key_1) ,LSHIFT(Key_Quote) ,LSHIFT(Key_Equals) ,LSHIFT(Key_Minus)   ,LSHIFT(Key_4)           ,LSHIFT(Key_5)
-      ,MO(WINDOW)    ,___               ,Key_LeftAlt        ,Key_LeftShift       ,___                     ,Key_LeftControl
+      ,___           ,___               ,Key_LeftAlt        ,Key_LeftShift       ,___                     ,Key_LeftControl
 
                      ,Key_6             ,Key_7              ,Key_8               ,Key_9                   ,Key_0
                      ,LSHIFT(Key_8)     ,Key_LeftParen      ,Key_RightParen      ,LSHIFT(Key_LeftBracket) ,LSHIFT(Key_RightBracket)
