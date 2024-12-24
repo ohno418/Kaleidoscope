@@ -99,22 +99,22 @@ KEYMAPS(
 
                            ,LALT(Key_6)         ,LALT(Key_7)         ,LALT(Key_8)         ,LALT(Key_9)         ,LALT(Key_0)
                            ,LALT(LSHIFT(Key_6)) ,LALT(LSHIFT(Key_7)) ,LALT(LSHIFT(Key_8)) ,LALT(LSHIFT(Key_9)) ,LALT(LSHIFT(Key_0))
-      ,___                 ,LALT(LCTRL(Key_6))  ,LALT(LCTRL(Key_7))  ,LALT(LCTRL(Key_8))  ,LALT(LCTRL(Key_9))  ,LALT(LCTRL(Key_0))
-      ,LALT(Key_Tab)       ,___                 ,___                 ,___                 ,___                 ,___
+      ,LALT(Key_Tab)       ,LALT(LCTRL(Key_6))  ,LALT(LCTRL(Key_7))  ,LALT(LCTRL(Key_8))  ,LALT(LCTRL(Key_9))  ,LALT(LCTRL(Key_0))
+      ,___                 ,___                 ,___                 ,___                 ,___                 ,___
    ),
 
   [MISC] = KEYMAP_STACKED
   (
-       ___ ,___ ,___         ,___           ,___
-      ,___ ,___ ,___         ,___           ,___
-      ,___ ,___ ,___         ,___           ,___ ,___
-      ,___ ,___ ,Key_LeftAlt ,Key_LeftShift ,___ ,Key_LeftControl
+       ___ ,___ ,___ ,___ ,___
+      ,___ ,___ ,___ ,___ ,___
+      ,___ ,___ ,___ ,___ ,___ ,___
+      ,___ ,___ ,___ ,___ ,___ ,___
 
       // arrows and media keys
-                       ,___           ,Key_PageDown             ,Key_PageUp               ,___                                 ,___
-                       ,Key_LeftArrow ,Key_DownArrow            ,Key_UpArrow              ,Key_RightArrow                      ,___
-      ,Key_PrintScreen ,Consumer_Mute ,Consumer_VolumeDecrement ,Consumer_VolumeIncrement ,Consumer_DisplayBrightnessDecrement ,Consumer_DisplayBrightnessIncrement
-      ,Key_Tab         ,Key_Enter     ,___                      ,___                      ,___                                 ,___
+           ,___           ,Key_PageDown             ,Key_PageUp               ,___                                 ,Key_PrintScreen
+           ,Key_LeftArrow ,Key_DownArrow            ,Key_UpArrow              ,Key_RightArrow                      ,___
+      ,___ ,Consumer_Mute ,Consumer_VolumeDecrement ,Consumer_VolumeIncrement ,Consumer_DisplayBrightnessDecrement ,Consumer_DisplayBrightnessIncrement
+      ,___ ,Key_Enter     ,___                      ,___                      ,___                                 ,___
    ),
 )
 // clang-format on
