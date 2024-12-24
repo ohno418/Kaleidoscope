@@ -69,7 +69,7 @@ KEYMAPS(
        Key_Q         ,Key_W             ,Key_E              ,Key_R               ,Key_T
       ,Key_A         ,Key_S             ,Key_D              ,Key_F               ,Key_G
       ,Key_Z         ,Key_X             ,Key_C              ,Key_V               ,Key_B                   ,Key_Esc
-      ,Key_LeftShift ,MO(MISC)          ,Key_LeftAlt        ,Key_LeftShift       ,Key_Space               ,Key_LeftControl
+      ,MO(MISC)      ,Key_LeftGui       ,Key_LeftAlt        ,Key_LeftShift       ,Key_Space               ,Key_LeftControl
 
                      ,Key_Y             ,Key_U              ,Key_I               ,Key_O                   ,Key_P
                      ,Key_H             ,Key_J              ,Key_K               ,Key_L                   ,Key_Semicolon
@@ -87,7 +87,7 @@ KEYMAPS(
                      ,Key_6             ,Key_7              ,Key_8               ,Key_9                   ,Key_0
                      ,LSHIFT(Key_8)     ,Key_LeftParen      ,Key_RightParen      ,LSHIFT(Key_LeftBracket) ,LSHIFT(Key_RightBracket)
       ,LSHIFT(Key_6) ,LSHIFT(Key_7)     ,Key_LeftBracket    ,Key_RightBracket    ,Key_Backtick            ,Key_Backslash
-      ,___           ,___               ,___                ,___                 ,___                     ,___
+      ,___           ,___               ,___                ,___                 ,LSHIFT(Key_Backtick)    ,LSHIFT(Key_Backslash)
    ),
 
   [WINDOW] = KEYMAP_STACKED
